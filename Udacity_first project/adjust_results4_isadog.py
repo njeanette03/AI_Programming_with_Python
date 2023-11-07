@@ -67,6 +67,10 @@ def adjust_results4_isadog(results_dic, dogfile):
     Returns:
            None - results_dic is mutable data type so no return needed.
     """           
+    # Creates dognames dictionary for quick matching to results_dic labels from
+    # real answer & classifier's answer
+    dognames_dic = dict()
+    
     # read in dognames and store as data structure
     with open(dogfile, 'r') as file:
         dognames = set(line.strip() for line in file)
@@ -82,7 +86,6 @@ def adjust_results4_isadog(results_dic, dogfile):
         else:
             results_dic[key].append(0)
            
-       
         # compare dog names to classifier in results dictionary
         classifier_label = results_dic[key][1]
         if classifier_label in dognames:
