@@ -67,8 +67,7 @@ def classify_images(images_dir, results_dic, model):
     """
     for key in results_dic:
         # classifer function to classify images function
-        image_path = images_dir + key
-        model_label = classifier(image_path, model) # classifier
+        model_label = classifier(f"{images_dir}/{key}", model)
         
         # set labels to lowercase and strip whitespace
         model_label = model_label.lower().strip()
