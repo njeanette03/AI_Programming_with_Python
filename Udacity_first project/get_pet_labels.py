@@ -47,7 +47,7 @@ def get_pet_labels(image_dir):
     filename_list = listdir(image_dir)
     
     # Creates a dictionary of pet labels (results_dic) based upon the filenames 
-    results_dic = {}
+    results_dic = dict()
     
     ## Determines number of items in dictionary
     items_in_dic = len(results_dic)
@@ -67,7 +67,7 @@ def get_pet_labels(image_dir):
             for word in word_list_pet_label:
                 # set to lowercase and add whitespace between words
                 if word.isalpha():
-                    pet_name += word.lower() + ""
+                    pet_name += word.lower() + " "
                    
                
             # strip off starting/trailing whitespace characters
@@ -80,10 +80,6 @@ def get_pet_labels(image_dir):
         # duplicate exist warning message
         else:
             print("Warning:  duplicate files exist in directory:", filename_list[idx])
-   
-    # iterate through dictionary and print keys and values
-    print("\nAll key-value pairs in dictionary results_dic are as follow:\n")
-    for key in results_dic:
-        print("Filename = ", key, "    Pet Label = ", results_dic[key][0])
-       
+
+    
     return results_dic
