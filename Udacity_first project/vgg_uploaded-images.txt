@@ -1,0 +1,76 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_02.jpg  label:                        dog
+ 2 key:                    Zoox_01.jpg  label:                       zoox
+ 3 key:            Sugar_Glider_01.jpg  label:                sugarglider
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:          tabby, tabby cat, cat
+
+                   Zoox_01.jpg: 
+Real:                       zoox   Classifier: trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi
+
+           Sugar_Glider_01.jpg: 
+Real:                sugarglider   Classifier:                      chihuahua
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                       papillon
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:          tabby, tabby cat, cat  
+PetLabelDog: 1  ClassLabelDog: 0
+
+                   Zoox_01.jpg: 
+Real:                       zoox   Classifier: trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi  
+PetLabelDog: 0  ClassLabelDog: 0
+
+           Sugar_Glider_01.jpg: 
+Real:                sugarglider   Classifier:                      chihuahua  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                       papillon  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+            N Images:   4
+        N Dog Images:   2
+    N Not Dog Images:   2
+50.0% Correct Dog
+0.0% Correct Breed
+50.0% Correct Not Dog
+0.0% Match
+Misclassified Dogs
+image: Dog_02.jpg, classifier label: tabby, tabby cat, cat
+image: Sugar_Glider_01.jpg, classifier label: chihuahua
+Misclassified Breed of Dogs
+image: Dog_01.jpg, classifier label: papillon
+
+** Total Elapsed Runtime: 0:0:8
