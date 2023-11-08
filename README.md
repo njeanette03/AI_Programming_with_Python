@@ -8,6 +8,8 @@ The first project deals with using a given pre-trained image classifier in order
 
 *Please note that the foundation of the code was provided by Udacity as a starting point for the project.
 
+![](https://github.com/njeanette03/AI_Programming_with_Python/blob/main/feedback/Reviewer%20Feedback%20for%20First%20Project.png)
+
 ## Numpy, Pandas, Matplotlib
 
 Focus on library packages for Python for data wrangling, data analysis for large data, and data visualization.
