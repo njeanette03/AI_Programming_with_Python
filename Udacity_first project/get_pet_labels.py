@@ -58,28 +58,30 @@ def get_pet_labels(image_dir):
     for idx in range(0, len(filename_list), 1):
         # Skips file if starts with . (like .DS_Store of Mac OSX) because it isn't an pet image file
         if filename_list[idx][0] != ".":
-            # splits lower case string by _ to break into words 
-            word_list_pet_label = filename_list[idx].split("_")
+             # set to lowercase 
+            low_pet_label = filename_list[idx].lower()
+            # split string 
+            word_list_pet_label = low_pet_label.split("_") 
             # Creates temporary label variable to hold pet label name extracte
-            pet_name = ""          
+            pet_name = ""            
             
             # loop to check if word in pet name is only alphabetic characters - if true append word to pet_name separated by trailing spacefor word in word_list_pet_label:
             for word in word_list_pet_label:
                 # set to lowercase and add whitespace between words
                 if word.isalpha():
-                    pet_name += word.lower() + " "
-                               # if filename_list doesn't exist, add it and label
-                if filename_list[idx] not in results_dic:
-                    results_dic[filename_list[idx]] = [pet_name] 
-                   
-                # duplicate exist warning message
-                else:  
-                    print("Warning:  duplicate files exist in directory:", filename_list[idx])
+                    pet_name += word + " "
+                            
+            pet_name = pet_name.strip()
+                
+            # if filename_list doesn't exist, add it and label
+            if filename_list[idx] not in results_dic:
+                results_dic[filename_list[idx]] = [pet_name] 
+               
+            # duplicate exist warning message
+            else:  
+                print("Warning:  duplicate files exist in directory:", filename_list[idx])
                    
                
-            # strip off starting/trailing whitespace characters
-            pet_name = pet_name.rstrip()
-           
         # iterate through dictionary and print keys and values
         print("\nAll key-value pairs in dictionary results_dic are as follow:\n")
         for key in results_dic:
