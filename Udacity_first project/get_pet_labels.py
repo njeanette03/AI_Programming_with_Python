@@ -61,25 +61,28 @@ def get_pet_labels(image_dir):
             # splits lower case string by _ to break into words 
             word_list_pet_label = filename_list[idx].split("_")
             # Creates temporary label variable to hold pet label name extracte
-            pet_name = ""
+            pet_name = ""          
             
             # loop to check if word in pet name is only alphabetic characters - if true append word to pet_name separated by trailing spacefor word in word_list_pet_label:
             for word in word_list_pet_label:
                 # set to lowercase and add whitespace between words
                 if word.isalpha():
                     pet_name += word.lower() + " "
+                               # if filename_list doesn't exist, add it and label
+                if filename_list[idx] not in results_dic:
+                    results_dic[filename_list[idx]] = [pet_name] 
+                   
+                # duplicate exist warning message
+                else:  
+                    print("Warning:  duplicate files exist in directory:", filename_list[idx])
                    
                
             # strip off starting/trailing whitespace characters
             pet_name = pet_name.rstrip()
            
-        # if filename_list doesn't exist, add it and label
-        if filename_list[idx] not in results_dic:
-            results_dic[filename_list[idx]] = [pet_name]
-           
-        # duplicate exist warning message
-        else:
-            print("Warning:  duplicate files exist in directory:", filename_list[idx])
-
-    
+        # iterate through dictionary and print keys and values
+        print("\nAll key-value pairs in dictionary results_dic are as follow:\n")
+        for key in results_dic:
+            print("Filename = ", key, "    Pet Label = ", results_dic[key][0])
+  
     return results_dic
