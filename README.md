@@ -1,5 +1,5 @@
 # AI_Programming_with_Python
-This repository contains my submissions for Udacity's nanodegree program 'AI Programming with Python'. 
+This repository contains my practice and submissions for Udacity's nanodegree program 'AI Programming with Python'. 
 
 ## Intro to AI for Python Programmers
 **First Project: Use Pre-trained Image Classifier to Identify Dog Breeds**
