@@ -2,7 +2,7 @@
 This repository contains my practice and submissions for Udacity's nanodegree program 'AI Programming with Python'. 
 
 ## Intro to AI for Python Programmers
-**First Project: Use Pre-trained Image Classifier to Identify Dog Breeds**
+[First Project: Use Pre-trained Image Classifier to Identify Dog Breeds](https://github.com/njeanette03/AI_Programming_with_Python/tree/main/Udacity_first%20project_Use%20Pre-trained%20Image%20Classifier) 
 
 The first project deals with using a given pre-trained image classifier in order to identify dog breeds and demonstrating the necessary Python skills for setting up a machine learning project.
 
