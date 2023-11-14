@@ -14,6 +14,9 @@ The first project deals with using a given pre-trained image classifier in order
 
 Focus on library packages for Python for data wrangling, data analysis for large data, and data visualization.
 
+* [NumPy Mini-Project](https://github.com/njeanette03/AI_Programming_with_Python/blob/main/NumPy%20Mini-Project/Mean%20Normalization%20and%20Data%20Separation.ipynb) Mean normalize and separate data
+* [Pandas Mini-Project](https://github.com/njeanette03/AI_Programming_with_Python/blob/main/Pandas%20Mini-Project/Statistics%20from%20Stock%20Data.ipynb) Get statistics from stock data
+
 ## Linear Algebra Essentials
 
 Learn the basics of Linear Algebra and why it is an important tool in the world of AI.
