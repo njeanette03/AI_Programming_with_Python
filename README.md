@@ -31,4 +31,6 @@ Learn concepts and how to apply concepts to design neural networks and algorithm
 
 ## Create Your Own Image Classifier
 
-**For the final project, we will build a state-of-the-art image classification application.
+**For the final project, we will build a state-of-the-art image classification application. 
+[First part](https://github.com/njeanette03/AI_Programming_with_Python/blob/main/Image_classifier_project.ipynb)
+
