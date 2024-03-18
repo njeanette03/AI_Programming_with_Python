@@ -31,6 +31,8 @@ Learn concepts and how to apply concepts to design neural networks and algorithm
 
 ## Create Your Own Image Classifier
 
-**For the final project, we will build a state-of-the-art image classification application. 
-[First part](https://github.com/njeanette03/AI_Programming_with_Python/blob/main/Image_classifier_project.ipynb)
+**For my final project for the AI programming in Python nanodegree at Udacity, I built and trained an image classifier to recognize different species of flowers on a Flower Dataset and then predicted new flower images. The Dataset contains 102 flower categories.
+
+I developed the code in Python for an image classifier built with PyTorch, then converted into a command line applications: train.py, predict.py. The code is first implement in a Jupyter notebook. 
+[Image_Classifier](https://github.com/njeanette03/Image_Classifier)
 
